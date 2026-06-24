@@ -1,0 +1,243 @@
+/* reset css */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* aggiungere font personalizzato */
+body, textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Stile della testata (header) */
+header {
+    background-color: #212121;
+    
+    color: #fff;
+
+    padding: 8px 20px;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+}
+
+header .lang-selector .lang-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Stile delle sezioni */
+#main-hero-section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("/immagine-bg.jpg");
+    background-size: cover;
+
+    background-position: center;
+
+    height: 84vh;
+}
+
+#main-hero-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#main-hero-section .wrapper .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#main-hero-section h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+}
+
+/* Stile pulsanti */
+.btn-standard {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 500ms all;
+}
+
+.btn-standard i {
+    font-size: 18px;
+}
+
+.pulsante-stile-1 {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.pulsante-stile-1:hover {
+    background: white;
+    color: black;
+}
+
+.pulsante-stile-2 {
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.pulsante-stile-2:hover {
+    background: rgb(221, 221, 221);
+    border-color: rgb(221, 221, 221);
+}
+
+/* Galleria */
+.galleria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2px;
+}
+
+.galleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sezione prezzo */
+.site-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.site-section .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabella-prezzo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6px;
+}
+
+.tabella-prezzo .colonna {
+    background: #212121;
+    color: white;
+    padding: 10px;
+}
+
+.tabella-prezzo .riga-dato {
+    background-color: rgb(231, 231, 231);
+    padding: 12px;
+    border-color: #212121;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+/* qui aggiungo gli stili per controllare il form di contatto */
+.form-contatto form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-contatto .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-contatto .form-row input, .form-contatto .form-row textarea {
+    padding: 5px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(17, 15, 15);
+    border-style: solid;
+    transition: 2s all;
+}
+
+.form-contatto input[type="submit"] {
+    background-color: #212121;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #212121;
+}
+
+.form-contatto input:focus, 
+.form-contatto textarea:focus {
+    outline: none;
+    border-width: 0 0 6px 0;
+}
+
+/* Stile del footer */
+footer {
+    background:#212121;
+    padding: 40px 20px;
+    color: white;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+footer .col-1 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+/* Ottimizzare il sito web per i dispositivi più grandi (tablet, computer e desktop) */
+
+@media (min-width: 768px) {
+    footer .wrapper {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    header, footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .wrapper {
+        width: 800px;
+    }
+
+    footer .wrapper {
+        width: 800px;
+    }
+
+    .galleria {
+        width: 800px;
+    }
+}

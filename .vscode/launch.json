@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RomephotoApplication<romephoto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fotografia.romephoto.RomephotoApplication",
+            "projectName": "romephoto",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
