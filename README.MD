@@ -8,7 +8,7 @@ Hai due metodi per scaricare questo codice:
 
 1) Avere GIT installato sul tuo computer e usare il comando `git clone <indirizzo-di-questa-repo>` per clonare la repository sul tuo computer
 
-2) Scarica la repository direttamente da GitHub usando il pulsante verde
+2) Scarica la repository direttamente da GitHub usando il pulsante verde `Code`, quindi clicca su questo pulsante e poi clicca su `Download ZIP`. Attendi il download, estrai l'archivio e apri la cartlla su Visual Studio Code.
 
 # Requisiti installati sul computer
 - Java
