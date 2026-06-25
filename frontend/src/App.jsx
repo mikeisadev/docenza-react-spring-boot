@@ -1,29 +1,33 @@
 import './App.css'
-import Header from './Header'
-import SectionOne from './SectionOne'
-import SectionThree from './SectionThree'
-import SectionTwo from './SectionTwo'
+import { Routes, Route } from 'react-router';
+
+/**
+ * Importiamo le pagine singole
+ */
+import HomePage from './pages/HomePage';
+import AboutUsPage from './pages/AboutUsPage';
+import ContactUsPage from './pages/ContactUsPage';
 
 /**
  * Componente principale APP.
  * 
  * Cosa fa?
- * Raccoglie tutti i sotto-componenti della
- * pagina organizzandoli e dando ordine.
+ * Dovrà definire le rotte e per ogni rotta ritornare la pagina.
  */
 function App() {
 
   // Qui ritorno il JSX
   return (
-    <>
-      <Header />
+    <Routes>
 
-      <main>
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-      </main>
-    </>
+      {/** Home page */}
+      <Route index element={ <HomePage /> } />
+
+      {/** Altre pagine */}
+      <Route path="/chi-siamo" element={ <AboutUsPage /> } />
+      <Route path="/contattaci" element={ <ContactUsPage /> } />
+
+    </Routes>
   )
 }
 

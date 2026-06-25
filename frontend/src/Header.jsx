@@ -18,7 +18,7 @@ export default function Header() {
 
                 <nav>
                     <ul>
-                        <li><a href="chi-siamo.html">Chi siamo</a></li>
+                        <li>Chi siamo</li>
                         <li>Contattaci</li>
                         <li>Galleria</li>
                         <li>Portfolio</li>
