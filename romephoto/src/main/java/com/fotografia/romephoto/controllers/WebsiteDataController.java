@@ -30,7 +30,8 @@ public class WebsiteDataController {
         var righe = Map.of(
             "row-1", List.of("Cortometraggio", "300€", "2h"),
             "row-2", List.of("Shooting prodotti sito ecommerce", "500€", "3h"),
-            "row-3", List.of("Book fotografico", "500€", "3h")
+            "row-3", List.of("Book fotografico", "500€", "3h"),
+            "row-4", List.of("Matrimonio", "1500€", "1 giornata")
         );
 
         var oggettoRisposta = Map.of(

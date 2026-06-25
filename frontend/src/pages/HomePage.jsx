@@ -1,14 +1,11 @@
-import Header from "../Header";
-import SectionOne from "../SectionOne";
-import SectionTwo from "../SectionTwo";
-import SectionThree from "../SectionThree";
+import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
+import SectionThree from "../components/SectionThree";
 
 export default function HomePage() {
 
     return (
         <>
-            <Header />
-
             <main>
                 <SectionOne />
                 <SectionTwo />

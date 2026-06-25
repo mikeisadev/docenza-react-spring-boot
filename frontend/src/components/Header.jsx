@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Header() {
     return (
         <header>
@@ -14,14 +16,14 @@ export default function Header() {
                 </div>
             </div>
             <div className="wrapper">
-                <h1>LogoSito</h1>
+                <h1><Link to="/">LogoSito</Link></h1>
 
                 <nav>
                     <ul>
-                        <li>Chi siamo</li>
-                        <li>Contattaci</li>
-                        <li>Galleria</li>
-                        <li>Portfolio</li>
+                        <li><Link to="/chi-siamo">Chi siamo</Link></li>
+                        <li><Link to="/contattaci">Contattaci</Link></li>
+                        <li><Link to="/galleria">Galleria</Link></li>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
                     </ul>
                 </nav>
             </div>
