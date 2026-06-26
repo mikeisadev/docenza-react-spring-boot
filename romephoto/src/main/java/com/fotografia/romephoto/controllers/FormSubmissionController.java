@@ -40,9 +40,17 @@ public class FormSubmissionController {
         );
 
         /**
-         * ESERCIZIO IMPLEMENTARE LA VALIDAZIONE
+         * TODO: ESERCIZIO IMPLEMENTARE LA VALIDAZIONE
          * 
-
+         * Valida ogni campo inviato dall'utente dal frontend
+         * per migliorare la sicurezza del backend.
+         * 
+         * Vedi se l'utente ha inserito nome, cognome, email,
+         * numero di telefono, messaggio e se ha accetato le
+         * condizioni di privacy policy.
+         * 
+         * Se queste condizioni non vengono rispettate genera
+         * messaggi di errore e riportali sul frontend.
          */
 
         /** Otteniamo la ContactFormRequestEntity */
@@ -72,6 +80,11 @@ public class FormSubmissionController {
          * save della repository
          */
         this.contactFormRepo.save(formRichiesta);
+
+        /**
+         * TODO: Implementa la funzionalità di invio 
+         * mail all'utente che ha fatto richiesta
+         */
         
         /**
          * Rispondo con la response entity ritornando 
