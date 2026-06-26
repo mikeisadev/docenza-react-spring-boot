@@ -2,13 +2,16 @@ package com.fotografia.romephoto.dto;
 
 public class ContactFormRequestDTO {
 
+    private Long id;
     private String fname;
     private String lname;
     private String email;
     private String phone;
     private String message;
     private Boolean acceptancePP;
+
     
+
     public String getFname() {
         return fname;
     }
@@ -44,6 +47,12 @@ public class ContactFormRequestDTO {
     }
     public void setAcceptancePP(Boolean acceptancePP) {
         this.acceptancePP = acceptancePP;
+    }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
 
     

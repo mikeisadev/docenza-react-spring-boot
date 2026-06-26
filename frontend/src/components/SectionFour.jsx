@@ -3,6 +3,7 @@ import DatiFormDTO from '../dto/DatiFormDTO';
 
 export default function SectionFour() {
     const [datiForm, sovrascriviDatiForm] = useState(new DatiFormDTO());
+    const [formResponse, setFormResponse] = useState(null);
 
     /**
      * Funzione specifica per gestire i campi di testo
@@ -51,7 +52,8 @@ export default function SectionFour() {
             method: "POST",
             body: JSON.stringify(datiForm)
         })
-        .then(response => console.log(response));
+        .then(response => response.json())
+        .then(response => setFormResponse(response));
 
     }
 
@@ -65,6 +67,15 @@ export default function SectionFour() {
                 <div class="content">
 
                     <div class="form-contatto">
+                        {
+                            formResponse ?
+                                <div class="form-validation-success">
+                                    {formResponse.successMessage}
+                                </div>
+                                : 
+                                null
+                        }
+
                         <form action="" onSubmit={handleFormSubmit}>
                             <div class="form-row">
                                 <label for="">Inserisci nome</label>
