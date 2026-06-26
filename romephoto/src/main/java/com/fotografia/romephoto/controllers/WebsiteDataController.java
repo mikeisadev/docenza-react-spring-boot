@@ -12,6 +12,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 
 @RestController
@@ -52,5 +55,13 @@ public class WebsiteDataController {
                     put("galleria", "fotografica");
                 }});
     }
+
+    @PostMapping("path")
+    public String postMethodName(@RequestBody RequestBody request) {
+        String nome = request.
+        
+        return entity;
+    }
+    
     
 }

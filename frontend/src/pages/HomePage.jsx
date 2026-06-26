@@ -1,6 +1,7 @@
 import SectionOne from "../components/SectionOne";
 import SectionTwo from "../components/SectionTwo";
 import SectionThree from "../components/SectionThree";
+import SectionFour from "../components/SectionFour";
 
 export default function HomePage() {
 
@@ -10,6 +11,7 @@ export default function HomePage() {
                 <SectionOne />
                 <SectionTwo />
                 <SectionThree />
+                <SectionFour />
             </main>
         </>
     )
